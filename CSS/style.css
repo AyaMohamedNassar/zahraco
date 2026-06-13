@@ -1550,11 +1550,7 @@ img {
   width: 26px;
   background: var(--primary-color);
 }
-@media (max-width: 767.89px) {
-  .cr-dots {
-    display: none;
-  }
-}
+
 /* ── Autoplay progress bar on active card ─────── */
 .cr-card.cr-is-active .cr-progress {
   display: block;
