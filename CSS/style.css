@@ -1481,6 +1481,7 @@ img {
 .cr-controls {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   background: rgba(220, 220, 218, 0.55);
   backdrop-filter: blur(10px);
@@ -1490,6 +1491,11 @@ img {
   padding: 8px 18px;
   margin-top: 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 767.89px) {
+  .cr-controls {
+    min-width: 50%;
+  }
 }
 
 .cr-btn-nav {
@@ -1522,18 +1528,13 @@ img {
 .cr-dots {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 6px;
 }
 
-.cr-dots {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .cr-dot {
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 18px;
+  min-height: 18px;
   border-radius: 999px;
   background: rgba(24, 41, 89, 0.25);
   border: none;
@@ -1549,7 +1550,11 @@ img {
   width: 26px;
   background: var(--primary-color);
 }
-
+@media (max-width: 767.89px) {
+  .cr-dots {
+    display: none;
+  }
+}
 /* ── Autoplay progress bar on active card ─────── */
 .cr-card.cr-is-active .cr-progress {
   display: block;
