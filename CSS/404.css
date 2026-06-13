@@ -1,0 +1,151 @@
+.p404 {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  text-align: center;
+  background: #faf8f3;
+  padding: 4rem 1.5rem 3rem;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.p404-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #182959;
+  color: #faf8f3;
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.p404-eyebrow i {
+  color: #f9b71f;
+  font-size: 16px;
+}
+.p404-num {
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(80px, 14vw, 120px);
+  font-weight: 700;
+  color: #182959;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -4px;
+  position: relative;
+  display: inline-block;
+}
+.p404-num::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: #f9b71f;
+  border-radius: 999px;
+  width: 60%;
+  margin: 0.25rem auto 0;
+}
+.p404-title {
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #182959;
+  margin: 1.25rem 0 0.75rem;
+}
+.p404-sub {
+  font-size: 1rem;
+  color: #636363;
+  line-height: 1.8;
+  margin: 0 0 2rem;
+  max-width: 400px;
+}
+.p404-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.btn-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #182959;
+  color: #faf8f3;
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-navy:hover {
+  background: #f9b71f;
+  color: #182959;
+}
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #182959;
+  border: 1.5px solid #182959;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: #182959;
+  color: #faf8f3;
+}
+.p404-divider {
+  width: 40px;
+  height: 1px;
+  background: #cbd1e1;
+  margin: 0 auto 1.5rem;
+}
+.p404-nav-label {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+.p404-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.chip {
+  font-size: 13px;
+  color: #182959;
+  border: 1px solid #cbd1e1;
+  border-radius: 999px;
+  padding: 6px 18px;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  background: #fff;
+}
+.chip:hover {
+  background: #182959;
+  color: #faf8f3;
+  border-color: #182959;
+}
+.p404-curtain {
+  margin: 0 auto 1.5rem;
+  width: 160px;
+  height: 100px;
+  position: relative;
+}
