@@ -1113,7 +1113,7 @@ img {
   justify-content: space-between;
   padding: 0;
 }
-.services .card-body h5 {
+.services .card-body h3 {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
@@ -1667,7 +1667,7 @@ img {
   font-size: 18px;
   flex-shrink: 0;
 }
-.wcu-card h5 {
+.wcu-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text);
