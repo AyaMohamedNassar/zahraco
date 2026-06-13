@@ -175,7 +175,7 @@ img {
     gap: 18px;
   }
 }
-@media (min-width:1200px) and (max-width: 1400.98px) {
+@media (min-width: 1200px) and (max-width: 1400.98px) {
   .mega-menu {
     gap: 20px;
   }
@@ -225,7 +225,7 @@ img {
     padding: 10px 12px;
   }
 }
-@media (min-width:1200px) and (max-width: 1400.98px) {
+@media (min-width: 1200px) and (max-width: 1400.98px) {
   .mega-menu .links > li {
     font-size: 14px;
     padding: 11px 13px;
@@ -680,7 +680,7 @@ img {
   display: block;
   font-size: 0.7rem;
   font-weight: 400;
-  color: var(--text-light);
+  color: var(--text);
   margin-top: 2px;
 }
 
@@ -1498,12 +1498,12 @@ img {
   cursor: pointer;
   color: var(--primary-color);
   font-size: 0.95rem;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   transition:
     background 0.2s,
     color 0.2s;
@@ -1525,9 +1525,15 @@ img {
   gap: 6px;
 }
 
+.cr-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .cr-dot {
-  height: 8px;
-  width: 8px;
+  min-width: 24px;
+  min-height: 24px;
   border-radius: 999px;
   background: rgba(24, 41, 89, 0.25);
   border: none;

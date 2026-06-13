@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://trustco.com/contact.html" />
+    <meta property="og:url" content="https://zahraco.com/contact.html" />
     <meta property="og:title" content="تواصل معنا - مصنع الزهراء" />
     <meta
       property="og:description"
@@ -13,11 +13,12 @@
     />
     <meta
       property="og:image"
-      content="https://trustco.com/images/Curtains-1.webp"
+      content="https://zahraco.com/images/Curtains-1.webp"
     />
     <meta property="og:locale" content="ar_BH" />
 
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <link rel="canonical" href="https://zahraco.com/contact.html" />
 
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/all.min.css" />
@@ -233,98 +234,104 @@
       </div>
     </nav>
 
-    <section
-      class="container py-5 d-flex justify-content-around align-items-center"
-    >
-      <div class="contact-wrapper">
-        <div class="info-side">
-          <p class="info-eyebrow">ابقَ على تواصل</p>
-          <h2 class="info-heading">كيف يمكننا<br />مساعدتك؟</h2>
-          <p class="info-sub">
-            فريقنا جاهز للإجابة على جميع استفساراتك. تواصل معنا بأي طريقة
-            تناسبك.
-          </p>
-          <div class="info-divider"></div>
+    <main>
+      <section
+        class="container py-5 d-flex justify-content-around align-items-center"
+      >
+        <div class="contact-wrapper">
+          <div class="info-side">
+            <p class="info-eyebrow">ابقَ على تواصل</p>
+            <h2 class="info-heading">كيف يمكننا<br />مساعدتك؟</h2>
+            <p class="info-sub">
+              فريقنا جاهز للإجابة على جميع استفساراتك. تواصل معنا بأي طريقة
+              تناسبك.
+            </p>
+            <div class="info-divider"></div>
 
-          <div class="info-card">
-            <div class="info-icon-wrap"><i class="fa-solid fa-phone"></i></div>
-            <div>
-              <p class="info-card-label">رقم الهاتف</p>
-              <p class="info-card-value" dir="ltr">+973 1758 0191</p>
+            <div class="info-card">
+              <div class="info-icon-wrap">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="info-card-label">رقم الهاتف</p>
+                <p class="info-card-value" dir="ltr">+973 1758 0191</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon-wrap">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="info-card-label">البريد الالكتروني</p>
+                <p class="info-card-value">Trust.Fact@hotmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon-wrap">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="info-card-label">العنوان</p>
+                <p class="info-card-value">
+                  الهملة، مبنى 975 ،طريق 1216 ، مجمع 1012، الرياض
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon-wrap">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p class="info-card-label">مواعيد العمل</p>
+                <p class="info-card-value">
+                  السبت – الخميس: 9:00 – 17:00 <br />الجمعة: مغلق
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="info-card">
-            <div class="info-icon-wrap">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div>
-              <p class="info-card-label">البريد الالكتروني</p>
-              <p class="info-card-value">Trust.Fact@hotmail.com</p>
-            </div>
-          </div>
+          <div class="form-side">
+            <p class="form-eyebrow">نموذج التواصل</p>
+            <h3 class="form-heading">اترك استفسارك</h3>
+            <p class="form-sub">سنرد عليك خلال 24 ساعة</p>
 
-          <div class="info-card">
-            <div class="info-icon-wrap">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div>
-              <p class="info-card-label">العنوان</p>
-              <p class="info-card-value">
-                الهملة، مبنى 975 ،طريق 1216 ، مجمع 1012، الرياض
-              </p>
-            </div>
-          </div>
+            <div id="form-alert" style="display: none"></div>
 
-          <div class="info-card">
-            <div class="info-icon-wrap"><i class="fa-solid fa-clock"></i></div>
-            <div>
-              <p class="info-card-label">مواعيد العمل</p>
-              <p class="info-card-value">
-                السبت – الخميس: 9:00 – 17:00 <br />الجمعة: مغلق
-              </p>
+            <div class="field-row">
+              <div class="field-group">
+                <label for="sender-name">الاسم</label>
+                <input id="sender-name" type="text" placeholder="اسمك الكامل" />
+              </div>
+              <div class="field-group">
+                <label for="sender-email">البريد الالكتروني</label>
+                <input
+                  id="sender-email"
+                  type="email"
+                  placeholder="example@email.com"
+                />
+              </div>
             </div>
+
+            <div class="field-group">
+              <label for="sender-message">الرسالة</label>
+              <textarea
+                id="sender-message"
+                placeholder="اكتب رسالتك هنا..."
+              ></textarea>
+            </div>
+
+            <button id="btn-send" class="btn-send" type="button">
+              <span class="btn-dot"></span>
+              إرسال الرسالة
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
           </div>
         </div>
-
-        <div class="form-side">
-          <p class="form-eyebrow">نموذج التواصل</p>
-          <h3 class="form-heading">اترك استفسارك</h3>
-          <p class="form-sub">سنرد عليك خلال 24 ساعة</p>
-
-          <div id="form-alert" style="display: none"></div>
-
-          <div class="field-row">
-            <div class="field-group">
-              <label for="sender-name">الاسم</label>
-              <input id="sender-name" type="text" placeholder="اسمك الكامل" />
-            </div>
-            <div class="field-group">
-              <label for="sender-email">البريد الالكتروني</label>
-              <input
-                id="sender-email"
-                type="email"
-                placeholder="example@email.com"
-              />
-            </div>
-          </div>
-
-          <div class="field-group">
-            <label for="sender-message">الرسالة</label>
-            <textarea
-              id="sender-message"
-              placeholder="اكتب رسالتك هنا..."
-            ></textarea>
-          </div>
-
-          <button id="btn-send" class="btn-send" type="button">
-            <span class="btn-dot"></span>
-            إرسال الرسالة
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer id="footer">
       <div class="container">
@@ -332,31 +339,52 @@
           <h3>مصنع الزهراء</h3>
 
           <ul class="social">
-            <li class="instegram">
+            <li class="instagram">
               <a
                 href="https://www.instagram.com/trust_factory?igsh=MW9wdTk3YXZhNHdtbA=="
-                class="instegram"
-                description="Instegram"
+                class="instagram"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
             <li class="facebook">
-              <a href="#" class="facebook" description="Facebook">
-                <i class="fab fa-facebook-f"></i>
+              <a
+                href="#"
+                class="facebook"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
             </li>
             <li class="twitter">
-              <a href="#" class="twitter" description="X">
-                <i class="fab fa-x-twitter"></i>
+              <a
+                href="#"
+                class="twitter"
+                aria-label="X (Twitter)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
               </a>
             </li>
             <li class="youtube">
-              <a href="#" class="youtube" description="YouTube">
-                <i class="fab fa-youtube"></i>
+              <a
+                href="#"
+                class="youtube"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-youtube" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
+          >
 
           <p class="text">
             ستائر فاخرة وأبواب عصرية مصممة بعناية لتعكس ذوقك الفريد وتضيف لمسة
@@ -429,8 +457,11 @@
         <i class="fa-solid fa-phone"></i>
       </a>
     </div>
+
     <div class="arrow-up">
-      <a href="#header"> <i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#mainNavbar" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </a>
     </div>
 
     <script src="./JS/bootstrap.bundle.min.js"></script>
