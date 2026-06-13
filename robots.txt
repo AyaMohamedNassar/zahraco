@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /PHPMailer/
+Disallow: /send-mail.php
+
+Sitemap: https://zahraco.com/sitemap.xml
