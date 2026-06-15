@@ -1809,7 +1809,7 @@ footer .social a {
 footer .social a .svg-inline--fa {
   font-size: 20px;
 }
-footer .social li.instegram:hover {
+footer .social li.instagram:hover {
   background-color: rgb(251, 31, 155);
 }
 footer .social li.facebook:hover {
@@ -1818,8 +1818,8 @@ footer .social li.facebook:hover {
 footer .social li.twitter:hover {
   background-color: rgb(29, 161, 242);
 }
-footer .social li.youtube:hover {
-  background-color: rgb(255, 0, 0);
+footer .social li.tiktok:hover {
+  background-color: rgb(219, 20, 2);
 }
 footer .text {
   line-height: 2;
