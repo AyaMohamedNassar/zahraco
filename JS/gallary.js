@@ -858,7 +858,7 @@ const serviceKey = params.get("service") || "roll-curtains";
 const service = SERVICES[serviceKey] || SERVICES["roll-curtains"];
 
 // Update page meta
-document.title = `Trustco – ${service.name}`;
+document.title = `مصنع الزهراء – ${service.name}`;
 document.querySelector('meta[name="description"]') &&
   (document.querySelector('meta[name="description"]').content = service.desc);
 
