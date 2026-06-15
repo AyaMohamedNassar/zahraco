@@ -1,3 +1,16 @@
+(function () {
+  var msg = [
+    "مرحبًا فريق مصنع الزهراء ",
+    "وصلتكم عن طريق الموقع،",
+    "أبغى عرض سعر لـ الستائر أو أبواب الأكورديون،",
+    "وهل متوفر قياس ومعاينة داخل السعودية؟",
+    "بانتظار ردكم، شكرًا لكم.",
+  ].join("\n");
+  var btn = document.getElementById("whatsapp-btn");
+  if (btn) {
+    btn.href = "https://wa.me/9660561637207?text=" + encodeURIComponent(msg);
+  }
+})();
 
 const SERVICES = {
   "accordion-plastic": {
@@ -881,9 +894,7 @@ const interval = setInterval(() => {
 }, 40);
 showingEl.textContent = target;
 
-// ══════════════════════════════════════════════════
-//  BUILD GALLERY GRID
-// ══════════════════════════════════════════════════
+
 const grid = document.getElementById("gallery-grid");
 
 service.images.forEach((item, idx) => {
