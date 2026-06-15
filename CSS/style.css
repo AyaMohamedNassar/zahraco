@@ -1912,7 +1912,7 @@ footer .footer-gallery img {
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 99999;
   background-color: rgba(0, 0, 0, 0.92);
   align-items: center;
   justify-content: center;
@@ -1973,7 +1973,7 @@ footer .footer-gallery img {
   right: 1rem;
   padding: 0.5rem 1.1rem;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--cream);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
