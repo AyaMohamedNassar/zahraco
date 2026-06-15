@@ -1743,6 +1743,7 @@ img {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
+  direction: ltr;
   transition: var(--main-transition);
 }
 .contact-cta-detail i {
