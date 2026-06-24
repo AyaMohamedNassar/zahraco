@@ -18,9 +18,8 @@
   const lbDownload = document.getElementById("lightbox-download");
   const lbClose = document.getElementById("lightbox-close");
 
-  // Make every image in the page clickable (except logo & carousel nav)
   const images = document.querySelectorAll(
-    "img:not(.navbar-brand img):not(.carousel-item img):not(.mega-menu img):not(.story-img)"
+    "img:not(.navbar-brand img):not(.footer-gallery img):not(.mega-menu img):not(.story-img)"
   );
 
   images.forEach((img) => {

@@ -99,6 +99,7 @@ img {
   display: block;
   height: 65px;
   width: auto;
+  margin: auto;
 }
 .nav-link {
   color: var(--text);
