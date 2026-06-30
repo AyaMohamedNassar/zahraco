@@ -1061,3 +1061,10 @@ const observer = new IntersectionObserver(
   { threshold: 0.08 },
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+(function () {
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+})();
