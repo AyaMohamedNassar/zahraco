@@ -4,4 +4,4 @@ Disallow: /PHPMailer/
 Disallow: /send-mail.php
 Disallow: /404.html
 
-Sitemap: https://zahraco.com/sitemap.xml
+Sitemap: https://zahra-co.com/sitemap.xml
