@@ -25,13 +25,19 @@ define('ALLOWED_ORIGIN',  $_ENV['ALLOWED_ORIGIN']);
 
 header('Content-Type: application/json; charset=utf-8');
 
+// ── Security Headers ─────────────────────────────────────────────────────
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('X-XSS-Protection: 1; mode=block');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
 // ── CORS ──────────────────────────────────────────────────────────────────
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if ($origin === ALLOWED_ORIGIN || strpos($origin, 'github.io') !== false) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
 header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Headers: Content-Type, X-CSRF-Token, X-Requested-With');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -45,6 +51,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// ── AJAX-only guard (blocks direct form POST from external sites) ────────
+$requestedWith = $_SERVER['HTTP_X_REQUESTED_WITH'] ?? '';
+if (strtolower($requestedWith) !== 'xmlhttprequest') {
+    http_response_code(403);
+    echo json_encode(['success' => false, 'message' => 'Forbidden']);
+    exit;
+}
+
 // ── Parse body ────────────────────────────────────────────────────────────
 $raw  = file_get_contents('php://input');
 $data = json_decode($raw, true);
@@ -54,15 +68,28 @@ if (!$data) {
     $data = $_POST;
 }
 
-// ── Validate ──────────────────────────────────────────────────────────────
+// ── Honeypot check (bot trap) ─────────────────────────────────────────
+$honeypot = trim($data['website'] ?? '');
+if ($honeypot !== '') {
+    // Bot detected — return fake success to not reveal the trap
+    http_response_code(200);
+    echo json_encode(['success' => true, 'message' => 'تم إرسال رسالتك بنجاح']);
+    exit;
+}
+
+// ── Validate ──────────────────────────────────────────────────────────
 $name    = trim($data['from_name']  ?? '');
 $email   = trim($data['from_email'] ?? '');
 $message = trim($data['message']    ?? '');
 
 $errors = [];
-if (!$name)                            $errors[] = 'الاسم مطلوب';
-if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'البريد الإلكتروني غير صحيح';
-if (!$message)                         $errors[] = 'الرسالة مطلوبة';
+if (!$name)                                                 $errors[] = 'الاسم مطلوب';
+if (mb_strlen($name, 'UTF-8') > 100)                        $errors[] = 'الاسم طويل جدًا';
+if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL))  $errors[] = 'البريد الإلكتروني غير صحيح';
+if (strlen($email) > 254)                                   $errors[] = 'البريد الإلكتروني طويل جدًا';
+if (!$message)                                              $errors[] = 'الرسالة مطلوبة';
+if (mb_strlen($message, 'UTF-8') < 10)                      $errors[] = 'الرسالة قصيرة جدًا';
+if (mb_strlen($message, 'UTF-8') > 2000)                    $errors[] = 'الرسالة طويلة جدًا';
 
 if ($errors) {
     http_response_code(422);
@@ -126,38 +153,38 @@ try {
     $mail->isHTML(true);
     $mail->Subject = "رسالة جديدة من موقع مصنع الثقة — {$name}";
     $mail->Body    = "
-<!DOCTYPE html>
-<html dir='rtl' lang='ar'>
-<head><meta charset='UTF-8'></head>
-<body style='font-family: Arial, sans-serif; direction: rtl; background: #f9f9f9; padding: 24px;'>
-  <div style='max-width: 560px; margin: 0 auto; background: #fff; border-radius: 8px;
-              border: 1px solid #e0e0e0; overflow: hidden;'>
-    <div style='background: #1a1a2e; padding: 24px; text-align: center;'>
-      <h2 style='color: #fff; margin: 0; font-size: 18px;'>رسالة جديدة من الموقع</h2>
-      <p style='color: #aaa; margin: 4px 0 0; font-size: 13px;'>مصنع الثقة — نموذج التواصل</p>
-    </div>
-    <div style='padding: 24px;'>
-      <table style='width: 100%; border-collapse: collapse; font-size: 14px;'>
-        <tr>
-          <td style='padding: 10px 0; color: #888; width: 130px; vertical-align: top;'>الاسم</td>
-          <td style='padding: 10px 0; color: #222; font-weight: bold;'>{$name}</td>
-        </tr>
-        <tr style='border-top: 1px solid #f0f0f0;'>
-          <td style='padding: 10px 0; color: #888; vertical-align: top;'>البريد الإلكتروني</td>
-          <td style='padding: 10px 0; color: #222;'><a href='mailto:{$email}' style='color:#1a73e8;'>{$email}</a></td>
-        </tr>
-        <tr style='border-top: 1px solid #f0f0f0;'>
-          <td style='padding: 10px 0; color: #888; vertical-align: top;'>الرسالة</td>
-          <td style='padding: 10px 0; color: #222; line-height: 1.7;'>" . nl2br($message) . "</td>
-        </tr>
-      </table>
-    </div>
-    <div style='background: #f5f5f5; padding: 14px 24px; font-size: 12px; color: #aaa; text-align: center;'>
-      أُرسلت هذه الرسالة من نموذج التواصل على موقع مصنع الثقة
-    </div>
-  </div>
-</body>
-</html>";
+              <!DOCTYPE html>
+              <html dir='rtl' lang='ar'>
+              <head><meta charset='UTF-8'></head>
+              <body style='font-family: Arial, sans-serif; direction: rtl; background: #f9f9f9; padding: 24px;'>
+                <div style='max-width: 560px; margin: 0 auto; background: #fff; border-radius: 8px;
+                            border: 1px solid #e0e0e0; overflow: hidden;'>
+                  <div style='background: #1a1a2e; padding: 24px; text-align: center;'>
+                    <h2 style='color: #fff; margin: 0; font-size: 18px;'>رسالة جديدة من الموقع</h2>
+                    <p style='color: #aaa; margin: 4px 0 0; font-size: 13px;'>مصنع الثقة — نموذج التواصل</p>
+                  </div>
+                  <div style='padding: 24px;'>
+                    <table style='width: 100%; border-collapse: collapse; font-size: 14px;'>
+                      <tr>
+                        <td style='padding: 10px 0; color: #888; width: 130px; vertical-align: top;'>الاسم</td>
+                        <td style='padding: 10px 0; color: #222; font-weight: bold;'>{$name}</td>
+                      </tr>
+                      <tr style='border-top: 1px solid #f0f0f0;'>
+                        <td style='padding: 10px 0; color: #888; vertical-align: top;'>البريد الإلكتروني</td>
+                        <td style='padding: 10px 0; color: #222;'><a href='mailto:{$email}' style='color:#1a73e8;'>{$email}</a></td>
+                      </tr>
+                      <tr style='border-top: 1px solid #f0f0f0;'>
+                        <td style='padding: 10px 0; color: #888; vertical-align: top;'>الرسالة</td>
+                        <td style='padding: 10px 0; color: #222; line-height: 1.7;'>" . nl2br($message) . "</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div style='background: #f5f5f5; padding: 14px 24px; font-size: 12px; color: #aaa; text-align: center;'>
+                    أُرسلت هذه الرسالة من نموذج التواصل على موقع مصنع الثقة
+                  </div>
+                </div>
+              </body>
+              </html>";
 
     $mail->AltBody = "اسم المرسل: {$name}\nالبريد: {$email}\n\nالرسالة:\n{$message}";
 

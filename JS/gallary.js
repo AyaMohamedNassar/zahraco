@@ -25,7 +25,7 @@ const SERVICES = {
         caption: "أبواب اكورديون بلاستيك – نموذج 1",
       },
       {
-        src: "./images/accordion-plastic/Door-2.jpg",
+        src: "./images/accordion-plastic/Door-2.webp",
         caption: "أبواب اكورديون بلاستيك – نموذج 2",
       },
       {
@@ -33,7 +33,7 @@ const SERVICES = {
         caption: "أبواب اكورديون بلاستيك – نموذج 3",
       },
       {
-        src: "./images/accordion-plastic/Door-2.jpg",
+        src: "./images/accordion-plastic/Door-2.webp",
         caption: "أبواب اكورديون بلاستيك – نموذج 4",
       },
       {
@@ -41,7 +41,7 @@ const SERVICES = {
         caption: "أبواب اكورديون بلاستيك – نموذج 5",
       },
       {
-        src: "./images/accordion-plastic/Door-2.jpg",
+        src: "./images/accordion-plastic/Door-2.webp",
         caption: "أبواب اكورديون بلاستيك – نموذج 6",
       },
       {
@@ -49,7 +49,7 @@ const SERVICES = {
         caption: "أبواب اكورديون بلاستيك – نموذج 7",
       },
       {
-        src: "./images/accordion-plastic/Door-2.jpg",
+        src: "./images/accordion-plastic/Door-2.webp",
         caption: "أبواب اكورديون بلاستيك – نموذج 8",
       },
     ],
@@ -66,7 +66,7 @@ const SERVICES = {
         caption: "أبواب اكورديون جلد – نموذج 1",
       },
       {
-        src: "./images/accordion-leather/Door-2.jpg",
+        src: "./images/accordion-leather/Door-2.webp",
         caption: "أبواب اكورديون جلد – نموذج 2",
       },
       {
@@ -74,7 +74,7 @@ const SERVICES = {
         caption: "أبواب اكورديون جلد – نموذج 3",
       },
       {
-        src: "./images/accordion-leather/Door-2.jpg",
+        src: "./images/accordion-leather/Door-2.webp",
         caption: "أبواب اكورديون جلد – نموذج 4",
       },
       {
@@ -82,7 +82,7 @@ const SERVICES = {
         caption: "أبواب اكورديون جلد – نموذج 5",
       },
       {
-        src: "./images/accordion-leather/Door-2.jpg",
+        src: "./images/accordion-leather/Door-2.webp",
         caption: "أبواب اكورديون جلد – نموذج 6",
       },
     ],
@@ -99,11 +99,11 @@ const SERVICES = {
         caption: "ستائر معدنية – نموذج 1",
       },
       {
-        src: "./images/venetian-blinds/Curtains-2.jpg",
+        src: "./images/venetian-blinds/Curtains-2.webp",
         caption: "ستائر معدنية – نموذج 2",
       },
       {
-        src: "./images/venetian-blinds/Curtains-3.png",
+        src: "./images/venetian-blinds/Curtains-3.webp",
         caption: "ستائر معدنية – نموذج 3",
       },
       {
@@ -131,11 +131,11 @@ const SERVICES = {
         caption: "شرائح الأسقف المعدنية – نموذج 1",
       },
       {
-        src: "./images/sliced-metal-roofs/Roof-2.jpg",
+        src: "./images/sliced-metal-roofs/Roof-2.webp",
         caption: "شرائح الأسقف المعدنية – نموذج 2",
       },
       {
-        src: "./images/sliced-metal-roofs/Roof-3.png",
+        src: "./images/sliced-metal-roofs/Roof-3.webp",
         caption: "شرائح الأسقف المعدنية – نموذج 3",
       },
       {
@@ -164,11 +164,11 @@ const SERVICES = {
         caption: "ستائر خشبية – نموذج 1",
       },
       {
-        src: "./images/wooden-curtains/Curtains-2.jpg",
+        src: "./images/wooden-curtains/Curtains-2.webp",
         caption: "ستائر خشبية – نموذج 2",
       },
       {
-        src: "./images/wooden-curtains/Curtains-3.png",
+        src: "./images/wooden-curtains/Curtains-3.webp",
         caption: "ستائر خشبية – نموذج 3",
       },
       {
@@ -180,7 +180,7 @@ const SERVICES = {
         caption: "ستائر خشبية – نموذج 5",
       },
       {
-        src: "./images/wooden-curtains/Curtains-2.jpg",
+        src: "./images/wooden-curtains/Curtains-2.webp",
         caption: "ستائر خشبية – نموذج 6",
       },
     ],
@@ -197,11 +197,11 @@ const SERVICES = {
         caption: "ستائر ويفي – نموذج 1",
       },
       {
-        src: "./images/wavy-curtains/Curtains-2.jpg",
+        src: "./images/wavy-curtains/Curtains-2.webp",
         caption: "ستائر ويفي – نموذج 2",
       },
       {
-        src: "./images/wavy-curtains/Curtains-3.png",
+        src: "./images/wavy-curtains/Curtains-3.webp",
         caption: "ستائر ويفي – نموذج 3",
       },
       {
@@ -230,11 +230,11 @@ const SERVICES = {
         caption: "ستائر زيبرا – نموذج 1",
       },
       {
-        src: "./images/zebra-curtains/Curtains-2.jpg",
+        src: "./images/zebra-curtains/Curtains-2.webp",
         caption: "ستائر زيبرا – نموذج 2",
       },
       {
-        src: "./images/zebra-curtains/Curtains-3.png",
+        src: "./images/zebra-curtains/Curtains-3.webp",
         caption: "ستائر زيبرا – نموذج 3",
       },
       {
@@ -246,7 +246,7 @@ const SERVICES = {
         caption: "ستائر زيبرا – نموذج 5",
       },
       {
-        src: "./images/zebra-curtains/Curtains-2.jpg",
+        src: "./images/zebra-curtains/Curtains-2.webp",
         caption: "ستائر زيبرا – نموذج 6",
       },
     ],
@@ -263,11 +263,11 @@ const SERVICES = {
         caption: "ستائر عمودية – نموذج 1",
       },
       {
-        src: "./images/vertical-curtains/Curtains-2.jpg",
+        src: "./images/vertical-curtains/Curtains-2.webp",
         caption: "ستائر عمودية – نموذج 2",
       },
       {
-        src: "./images/vertical-curtains/Curtains-3.png",
+        src: "./images/vertical-curtains/Curtains-3.webp",
         caption: "ستائر عمودية – نموذج 3",
       },
       {
@@ -279,7 +279,7 @@ const SERVICES = {
         caption: "ستائر عمودية – نموذج 5",
       },
       {
-        src: "./images/vertical-curtains/Curtains-2.jpg",
+        src: "./images/vertical-curtains/Curtains-2.webp",
         caption: "ستائر عمودية – نموذج 6",
       },
     ],
@@ -296,11 +296,11 @@ const SERVICES = {
         caption: "ستائر رول – نموذج 1",
       },
       {
-        src: "./images/roll-curtains/Curtains-2.jpg",
+        src: "./images/roll-curtains/Curtains-2.webp",
         caption: "ستائر رول – نموذج 2",
       },
       {
-        src: "./images/roll-curtains/Curtains-3.png",
+        src: "./images/roll-curtains/Curtains-3.webp",
         caption: "ستائر رول – نموذج 3",
       },
       {
@@ -312,7 +312,7 @@ const SERVICES = {
         caption: "ستائر رول – نموذج 5",
       },
       {
-        src: "./images/roll-curtains/Curtains-2.jpg",
+        src: "./images/roll-curtains/Curtains-2.webp",
         caption: "ستائر رول – نموذج 6",
       },
     ],
@@ -329,11 +329,11 @@ const SERVICES = {
         caption: "ستائر بلاك أوت – نموذج 1",
       },
       {
-        src: "./images/blackout-curtains/Curtains-2.jpg",
+        src: "./images/blackout-curtains/Curtains-2.webp",
         caption: "ستائر بلاك أوت – نموذج 2",
       },
       {
-        src: "./images/blackout-curtains/Curtains-3.png",
+        src: "./images/blackout-curtains/Curtains-3.webp",
         caption: "ستائر بلاك أوت – نموذج 3",
       },
       {
@@ -345,7 +345,7 @@ const SERVICES = {
         caption: "ستائر بلاك أوت – نموذج 5",
       },
       {
-        src: "./images/blackout-curtains/Curtains-2.jpg",
+        src: "./images/blackout-curtains/Curtains-2.webp",
         caption: "ستائر بلاك أوت – نموذج 6",
       },
     ],
@@ -362,11 +362,11 @@ const SERVICES = {
         caption: "ستائر مزدوجة – نموذج 1",
       },
       {
-        src: "./images/double-curtains/Curtains-2.jpg",
+        src: "./images/double-curtains/Curtains-2.webp",
         caption: "ستائر مزدوجة – نموذج 2",
       },
       {
-        src: "./images/double-curtains/Curtains-3.png",
+        src: "./images/double-curtains/Curtains-3.webp",
         caption: "ستائر مزدوجة   – نموذج 3",
       },
       {
@@ -378,7 +378,7 @@ const SERVICES = {
         caption: "ستائر مزدوجة – نموذج 5",
       },
       {
-        src: "./images/double-curtains/Curtains-2.jpg",
+        src: "./images/double-curtains/Curtains-2.webp",
         caption: "ستائر مزدوجة – نموذج 6",
       },
     ],
@@ -394,11 +394,11 @@ const SERVICES = {
         caption: "ستائر بديل الخشب – نموذج 1",
       },
       {
-        src: "./images/wooden-alternative/Curtains-2.jpg",
+        src: "./images/wooden-alternative/Curtains-2.webp",
         caption: "ستائر بديل الخشب – نموذج 2",
       },
       {
-        src: "./images/wooden-alternative/Curtains-3.png",
+        src: "./images/wooden-alternative/Curtains-3.webp",
         caption: "ستائر بديل الخشب – نموذج 3",
       },
       {
@@ -410,7 +410,7 @@ const SERVICES = {
         caption: "ستائر بديل الخشب – نموذج 5",
       },
       {
-        src: "./images/wooden-alternative/Curtains-2.jpg",
+        src: "./images/wooden-alternative/Curtains-2.webp",
         caption: "ستائر بديل الخشب – نموذج 6",
       },
     ],
@@ -426,11 +426,11 @@ const SERVICES = {
         caption: "ستائر يابانية – نموذج 1",
       },
       {
-        src: "./images/japanese-curtains/Curtains-2.jpg",
+        src: "./images/japanese-curtains/Curtains-2.webp",
         caption: "ستائر يابانية – نموذج 2",
       },
       {
-        src: "./images/japanese-curtains/Curtains-3.png",
+        src: "./images/japanese-curtains/Curtains-3.webp",
         caption: "ستائر يابانية – نموذج 3",
       },
       {
@@ -442,7 +442,7 @@ const SERVICES = {
         caption: "ستائر يابانية – نموذج 5",
       },
       {
-        src: "./images/japanese-curtains/Curtains-2.jpg",
+        src: "./images/japanese-curtains/Curtains-2.webp",
         caption: "ستائر يابانية – نموذج 6",
       },
     ],
@@ -458,11 +458,11 @@ const SERVICES = {
         caption: "ستائر المسرح – نموذج 1",
       },
       {
-        src: "./images/stage-blinds/Curtains-2.jpg",
+        src: "./images/stage-blinds/Curtains-2.webp",
         caption: "ستائر المسرح – نموذج 2",
       },
       {
-        src: "./images/stage-blinds/Curtains-3.png",
+        src: "./images/stage-blinds/Curtains-3.webp",
         caption: "ستائر المسرح – نموذج 3",
       },
       {
@@ -474,7 +474,7 @@ const SERVICES = {
         caption: "ستائر المسرح – نموذج 5",
       },
       {
-        src: "./images/stage-blinds/Curtains-2.jpg",
+        src: "./images/stage-blinds/Curtains-2.webp",
         caption: "ستائر المسرح – نموذج 6",
       },
     ],
@@ -490,11 +490,11 @@ const SERVICES = {
         caption: "ستائر البامبو – نموذج 1",
       },
       {
-        src: "./images/bamboo/Curtains-2.jpg",
+        src: "./images/bamboo/Curtains-2.webp",
         caption: "ستائر البامبو – نموذج 2",
       },
       {
-        src: "./images/bamboo/Curtains-3.png",
+        src: "./images/bamboo/Curtains-3.webp",
         caption: "ستائر البامبو – نموذج 3",
       },
       {
@@ -506,7 +506,7 @@ const SERVICES = {
         caption: "ستائر البامبو – نموذج 5",
       },
       {
-        src: "./images/bamboo/Curtains-2.jpg",
+        src: "./images/bamboo/Curtains-2.webp",
         caption: "ستائر البامبو – نموذج 6",
       },
     ],
@@ -522,11 +522,11 @@ const SERVICES = {
         caption: "الستائر الرومانية – نموذج 1",
       },
       {
-        src: "./images/roman-shade/Curtains-2.jpg",
+        src: "./images/roman-shade/Curtains-2.webp",
         caption: "الستائر الرومانية – نموذج 2",
       },
       {
-        src: "./images/roman-shade/Curtains-3.png",
+        src: "./images/roman-shade/Curtains-3.webp",
         caption: "الستائر الرومانية – نموذج 3",
       },
       {
@@ -538,7 +538,7 @@ const SERVICES = {
         caption: "الستائر الرومانية – نموذج 5",
       },
       {
-        src: "./images/roman-shade/Curtains-2.jpg",
+        src: "./images/roman-shade/Curtains-2.webp",
         caption: "الستائر الرومانية – نموذج 6",
       },
     ],
@@ -554,11 +554,11 @@ const SERVICES = {
         caption: "بديل الحجر – نموذج 1",
       },
       {
-        src: "./images/stone-alternative/Curtains-2.jpg",
+        src: "./images/stone-alternative/Curtains-2.webp",
         caption: "بديل الحجر – نموذج 2",
       },
       {
-        src: "./images/stone-alternative/Curtains-3.png",
+        src: "./images/stone-alternative/Curtains-3.webp",
         caption: "بديل الحجر – نموذج 3",
       },
       {
@@ -570,7 +570,7 @@ const SERVICES = {
         caption: "بديل الحجر – نموذج 5",
       },
       {
-        src: "./images/stone-alternative/Curtains-2.jpg",
+        src: "./images/stone-alternative/Curtains-2.webp",
         caption: "بديل الحجر – نموذج 6",
       },
     ],
@@ -586,11 +586,11 @@ const SERVICES = {
         caption: " الباركية – نموذج 1",
       },
       {
-        src: "./images/spc/Curtains-2.jpg",
+        src: "./images/spc/Curtains-2.webp",
         caption: " الباركية – نموذج 2",
       },
       {
-        src: "./images/spc/Curtains-3.png",
+        src: "./images/spc/Curtains-3.webp",
         caption: " الباركية – نموذج 3",
       },
       {
@@ -602,7 +602,7 @@ const SERVICES = {
         caption: " الباركية – نموذج 5",
       },
       {
-        src: "./images/spc/Curtains-2.jpg",
+        src: "./images/spc/Curtains-2.webp",
         caption: " الباركية – نموذج 6",
       },
     ],
@@ -618,11 +618,11 @@ const SERVICES = {
         caption: " ستائر السحابات الخارجية – نموذج 1",
       },
       {
-        src: "./images/external-curtains/Curtains-2.jpg",
+        src: "./images/external-curtains/Curtains-2.webp",
         caption: " ستائر السحابات الخارجية – نموذج 2",
       },
       {
-        src: "./images/external-curtains/Curtains-3.png",
+        src: "./images/external-curtains/Curtains-3.webp",
         caption: " ستائر السحابات الخارجية – نموذج 3",
       },
       {
@@ -634,7 +634,7 @@ const SERVICES = {
         caption: " ستائر السحابات الخارجية – نموذج 5",
       },
       {
-        src: "./images/external-curtains/Curtains-2.jpg",
+        src: "./images/external-curtains/Curtains-2.webp",
         caption: " ستائر السحابات الخارجية – نموذج 6",
       },
     ],
@@ -650,11 +650,11 @@ const SERVICES = {
         caption: " ستائر المستشفيات – نموذج 1",
       },
       {
-        src: "./images/hospital-curtains/Curtains-2.jpg",
+        src: "./images/hospital-curtains/Curtains-2.webp",
         caption: " ستائر المستشفيات – نموذج 2",
       },
       {
-        src: "./images/hospital-curtains/Curtains-3.png",
+        src: "./images/hospital-curtains/Curtains-3.webp",
         caption: " ستائر المستشفيات – نموذج 3",
       },
       {
@@ -666,7 +666,7 @@ const SERVICES = {
         caption: " ستائر المستشفيات – نموذج 5",
       },
       {
-        src: "./images/hospital-curtains/Curtains-2.jpg",
+        src: "./images/hospital-curtains/Curtains-2.webp",
         caption: " ستائر المستشفيات – نموذج 6",
       },
     ],
@@ -682,11 +682,11 @@ const SERVICES = {
         caption: " ستائر الثلاجات والمستودعات – نموذج 1",
       },
       {
-        src: "./images/refri-freezers-curtains/Curtains-2.jpg",
+        src: "./images/refri-freezers-curtains/Curtains-2.webp",
         caption: " ستائر الثلاجات والمستودعات – نموذج 2",
       },
       {
-        src: "./images/refri-freezers-curtains/Curtains-3.png",
+        src: "./images/refri-freezers-curtains/Curtains-3.webp",
         caption: " ستائر الثلاجات والمستودعات – نموذج 3",
       },
       {
@@ -698,7 +698,7 @@ const SERVICES = {
         caption: " ستائر الثلاجات والمستودعات – نموذج 5",
       },
       {
-        src: "./images/refri-freezers-curtains/Curtains-2.jpg",
+        src: "./images/refri-freezers-curtains/Curtains-2.webp",
         caption: " ستائر الثلاجات والمستودعات – نموذج 6",
       },
     ],
@@ -714,11 +714,11 @@ const SERVICES = {
         caption: " السلك الروماني – نموذج 1",
       },
       {
-        src: "./images/roman-rails/Curtains-2.jpg",
+        src: "./images/roman-rails/Curtains-2.webp",
         caption: " السلك الروماني – نموذج 2",
       },
       {
-        src: "./images/roman-rails/Curtains-3.png",
+        src: "./images/roman-rails/Curtains-3.webp",
         caption: " السلك الروماني – نموذج 3",
       },
       {
@@ -730,7 +730,7 @@ const SERVICES = {
         caption: " السلك الروماني – نموذج 5",
       },
       {
-        src: "./images/roman-rails/Curtains-2.jpg",
+        src: "./images/roman-rails/Curtains-2.webp",
         caption: " السلك الروماني – نموذج 6",
       },
     ],
@@ -746,11 +746,11 @@ const SERVICES = {
         caption: " السلك الجلايا – نموذج 1",
       },
       {
-        src: "./images/glydea-rails/Curtains-2.jpg",
+        src: "./images/glydea-rails/Curtains-2.webp",
         caption: " السلك الجلايا – نموذج 2",
       },
       {
-        src: "./images/glydea-rails/Curtains-3.png",
+        src: "./images/glydea-rails/Curtains-3.webp",
         caption: " السلك الجلايا – نموذج 3",
       },
       {
@@ -762,7 +762,7 @@ const SERVICES = {
         caption: " السلك الجلايا – نموذج 5",
       },
       {
-        src: "./images/glydea-rails/Curtains-2.jpg",
+        src: "./images/glydea-rails/Curtains-2.webp",
         caption: " السلك الجلايا – نموذج 6",
       },
     ],
@@ -778,11 +778,11 @@ const SERVICES = {
         caption: " السلك الأمريكي – نموذج 1",
       },
       {
-        src: "./images/american-rails/Curtains-2.jpg",
+        src: "./images/american-rails/Curtains-2.webp",
         caption: " السلك الأمريكي – نموذج 2",
       },
       {
-        src: "./images/american-rails/Curtains-3.png",
+        src: "./images/american-rails/Curtains-3.webp",
         caption: " السلك الأمريكي – نموذج 3",
       },
       {
@@ -794,7 +794,7 @@ const SERVICES = {
         caption: " السلك الأمريكي – نموذج 5",
       },
       {
-        src: "./images/american-rails/Curtains-2.jpg",
+        src: "./images/american-rails/Curtains-2.webp",
         caption: " السلك الأمريكي – نموذج 6",
       },
     ],
@@ -810,11 +810,11 @@ const SERVICES = {
         caption: " الستائر الكهربائية – نموذج 1",
       },
       {
-        src: "./images/motors-blinds/Curtains-2.jpg",
+        src: "./images/motors-blinds/Curtains-2.webp",
         caption: " الستائر الكهربائية – نموذج 2",
       },
       {
-        src: "./images/motors-blinds/Curtains-3.png",
+        src: "./images/motors-blinds/Curtains-3.webp",
         caption: " الستائر الكهربائية – نموذج 3",
       },
       {
@@ -826,7 +826,7 @@ const SERVICES = {
         caption: " الستائر الكهربائية – نموذج 5",
       },
       {
-        src: "./images/motors-blinds/Curtains-2.jpg",
+        src: "./images/motors-blinds/Curtains-2.webp",
         caption: " الستائر الكهربائية – نموذج 6",
       },
     ],
@@ -842,11 +842,11 @@ const SERVICES = {
         caption: " الستائر الكهربائية – نموذج 1",
       },
       {
-        src: "./images/alzahra-curtains-engine/Curtains-2.jpg",
+        src: "./images/alzahra-curtains-engine/Curtains-2.webp",
         caption: " الستائر الكهربائية – نموذج 2",
       },
       {
-        src: "./images/alzahra-curtains-engine/Curtains-3.png",
+        src: "./images/alzahra-curtains-engine/Curtains-3.webp",
         caption: " الستائر الكهربائية – نموذج 3",
       },
       {
@@ -858,7 +858,7 @@ const SERVICES = {
         caption: " الستائر الكهربائية – نموذج 5",
       },
       {
-        src: "./images/alzahra-curtains-engine/Curtains-2.jpg",
+        src: "./images/alzahra-curtains-engine/Curtains-2.webp",
         caption: " الستائر الكهربائية – نموذج 6",
       },
     ],
@@ -939,7 +939,7 @@ service.images.forEach((item, idx) => {
   const dlLink = document.createElement("a");
   dlLink.className = "card-action-btn btn-download";
   dlLink.href = item.src;
-  dlLink.download = item.caption + ".jpg";
+  dlLink.download = item.caption + ".webp";
   dlLink.title = "تحميل";
   dlLink.innerHTML = '<i class="fa-solid fa-download"></i>';
   dlLink.addEventListener("click", (e) => e.stopPropagation());
@@ -998,7 +998,7 @@ function updateLightbox() {
   lbCaption.textContent = item.caption;
   lbCounter.textContent = `${currentIdx + 1} / ${service.images.length}`;
   lbDownload.href = item.src;
-  lbDownload.download = item.caption + ".jpg";
+  lbDownload.download = item.caption + ".webp";
 
   // Update thumbs
   document.querySelectorAll(".lb-thumb").forEach((t, i) => {

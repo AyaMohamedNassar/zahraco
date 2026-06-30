@@ -2,6 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <meta name="csrf-token" content="" id="csrf-meta" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:type" content="website" />
@@ -63,11 +64,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> من نحن </a>
+              <a class="nav-link" href="services.html"> خدماتنا </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="services.html"> خدماتنا </a>
+              <a class="nav-link" href="about.html"> من نحن </a>
             </li>
 
             <li class="nav-item has-mega-menu">
@@ -274,9 +275,7 @@
               </div>
               <div>
                 <p class="info-card-label">العنوان</p>
-                <p class="info-card-value">
-                 الرياض - السلي - المشاعل
-                </p>
+                <p class="info-card-value">الرياض - السلي - المشاعل</p>
               </div>
             </div>
 
@@ -300,40 +299,97 @@
 
             <div id="form-alert" style="display: none"></div>
 
-            <div class="field-row">
-              <div class="field-group">
-                <label for="sender-name">الاسم</label>
-                <input id="sender-name" type="text" placeholder="اسمك الكامل" />
-              </div>
-              <div class="field-group">
-                <label for="sender-email">البريد الالكتروني</label>
+            <form id="contact-form" novalidate autocomplete="on">
+              <!-- Honeypot field — hidden from real users, catches bots -->
+              <div class="hp-field" aria-hidden="true" tabindex="-1">
+                <label for="website-url">Website</label>
                 <input
-                  id="sender-email"
-                  type="email"
-                  placeholder="example@email.com"
+                  type="text"
+                  id="website-url"
+                  name="website"
+                  autocomplete="off"
+                  tabindex="-1"
                 />
               </div>
-            </div>
 
-            <div class="field-group">
-              <label for="sender-message">الرسالة</label>
-              <textarea
-                id="sender-message"
-                placeholder="اكتب رسالتك هنا..."
-              ></textarea>
-            </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="sender-name"
+                    >الاسم <span class="required-mark">*</span></label
+                  >
+                  <input
+                    id="sender-name"
+                    name="from_name"
+                    type="text"
+                    placeholder="اسمك الكامل"
+                    required
+                    minlength="2"
+                    maxlength="100"
+                    pattern="^[\u0600-\u06FFa-zA-Z\s.'-]+$"
+                    autocomplete="name"
+                    aria-describedby="name-error"
+                  />
+                  <span id="name-error" class="field-error" role="alert"></span>
+                </div>
+                <div class="field-group">
+                  <label for="sender-email"
+                    >البريد الالكتروني
+                    <span class="required-mark">*</span></label
+                  >
+                  <input
+                    id="sender-email"
+                    name="from_email"
+                    type="email"
+                    placeholder="example@email.com"
+                    required
+                    maxlength="254"
+                    autocomplete="email"
+                    dir="ltr"
+                    aria-describedby="email-error"
+                  />
+                  <span
+                    id="email-error"
+                    class="field-error"
+                    role="alert"
+                  ></span>
+                </div>
+              </div>
 
-            <button id="btn-send" class="btn-send" type="button">
-              <span class="btn-dot"></span>
-              إرسال الرسالة
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
+              <div class="field-group">
+                <label for="sender-message"
+                  >الرسالة <span class="required-mark">*</span></label
+                >
+                <textarea
+                  id="sender-message"
+                  name="message"
+                  placeholder="اكتب رسالتك هنا..."
+                  required
+                  minlength="10"
+                  maxlength="2000"
+                  aria-describedby="message-error"
+                ></textarea>
+                <div class="field-meta">
+                  <span
+                    id="message-error"
+                    class="field-error"
+                    role="alert"
+                  ></span>
+                  <span id="char-counter" class="char-counter">0 / 2000</span>
+                </div>
+              </div>
+
+              <button id="btn-send" class="btn-send" type="submit">
+                <span class="btn-dot"></span>
+                إرسال الرسالة
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
-  <footer id="footer">
+    <footer id="footer">
       <div class="container">
         <div class="box">
           <h3>مصنع الزهراء</h3>
@@ -403,9 +459,7 @@
         <div class="box">
           <div class="line">
             <i class="fas fa-map-marker-alt fa-fw"></i>
-            <div class="info">
-             الرياض - السلي - المشاعل
-            </div>
+            <div class="info">الرياض - السلي - المشاعل</div>
           </div>
 
           <div class="line">
@@ -427,16 +481,15 @@
 
         <div class="box footer-gallery">
           <img src="./images/Curtains-1.webp" alt="Curtain 1" />
-          <img src="./images/Curtains-2.jpg" alt="Curtain 2" />
-          <img src="./images/Curtains-3.png" alt="Curtain 3" />
+          <img src="./images/Curtains-2.webp" alt="Curtain 2" />
+          <img src="./images/Curtains-3.webp" alt="Curtain 3" />
           <img src="./images/Curtains-4.webp" alt="Curtain 4" />
           <img src="./images/Door-1.webp" alt="Door 1" />
-          <img src="./images/Door-2.jpg" alt="Door 2" />
+          <img src="./images/Door-2.webp" alt="Door 2" />
         </div>
       </div>
       <p class="copyright">مصنع الزهراء — الرياض 2026 &copy;</p>
     </footer>
-
 
     <div>
       <a
