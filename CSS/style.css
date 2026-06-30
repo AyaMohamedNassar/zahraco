@@ -145,6 +145,9 @@ img {
 @media (max-width: 991.98px) {
   .navbar .navbar-nav {
     padding: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    margin-top: 16px;
   }
   .navbar .nav-link {
     margin-bottom: 0.5rem;
@@ -281,7 +284,6 @@ img {
   }
 }
 
-/* Mobile mega menu styles */
 @media (max-width: 991.98px) {
   .has-mega-menu .mega-menu {
     position: static !important;
@@ -304,13 +306,11 @@ img {
   }
 }
 
-/* Smooth transition for mega menu on mobile */
 @media (max-width: 991.98px) {
   .has-mega-menu .mega-menu {
     transition: all 0.3s ease;
   }
 
-  /* Optional: Add backdrop overlay when mega menu is open */
   .has-mega-menu.open::after {
     content: "";
     position: fixed;
@@ -334,21 +334,26 @@ img {
   border-color: var(--primary-color) !important;
   transition: var(--main-transition);
   font-weight: 600;
-}
-.btn-primary a {
-  color: var(--cream);
+  color: var(--cream) !important;
+  min-height: 44px;
+  min-width: 44px;
   transition: var(--main-transition);
-  padding: 0.25rem 1.25rem;
-  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5rem;
+  display: inline-flex;
 }
-.btn-primary:hover a {
-  color: var(--primary-color) !important;
+@media (max-width: 991.98px) {
+  .btn-primary {
+    display: block;
+    margin-bottom: 16px;
+  }
 }
 .btn-primary:hover {
-  background-color: var(--gold-light) !important;
+  background-color: transparent !important;
   color: var(--primary-color) !important;
-  border-color: var(--border-color) !important;
-  font-weight: 500;
+  border-color: var(--primary-color) !important;
+  opacity: 0.8;
 }
 
 .contact {
