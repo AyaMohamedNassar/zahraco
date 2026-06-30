@@ -19,7 +19,7 @@
   const lbClose = document.getElementById("lightbox-close");
 
   const images = document.querySelectorAll(
-    "img:not(.navbar-brand img):not(.footer-gallery img):not(.mega-menu img):not(.story-img)"
+    "img:not(.navbar-brand img):not(.footer-gallery img):not(.mega-menu img):not(.story-img)",
   );
 
   images.forEach((img) => {
@@ -44,14 +44,16 @@
     lbImg.src = "";
   }
 
-  lbClose.addEventListener("click", closeLightbox);
+  if (lbClose) {
+    lbClose.addEventListener("click", closeLightbox);
+  }
 
-  // Close when clicking outside the image
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
+  if (lightbox) {
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
 
-  // Close on Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
       closeLightbox();

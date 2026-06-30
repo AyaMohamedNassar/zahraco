@@ -2,24 +2,36 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="csrf-token" content="" id="csrf-meta" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'sha256-7Y6uruadyUuhcGLX1ZdpZkP2QaiASGEqF8HDzQNpqH4='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
+    />
+    <title>تواصل معنا - مصنع الثقة</title>
+    <meta
+      name="description"
+      content="تواصل مع مصنع الثقة للحصول على استشارة مجانية وعرض سعر. الهملة، البحرين — +973 17580191"
+    />
 
+    <meta property="og:site_name" content="مصنع الثقة" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zahraco.com/contact.html" />
-    <meta property="og:title" content="تواصل معنا - مصنع الزهراء" />
+    <meta property="og:url" content="https://trust-co.net/contact.html" />
+    <meta property="og:title" content="تواصل معنا - مصنع الثقة" />
     <meta
       property="og:description"
-      content="تواصل مع مصنع الزهراء للحصول على استشارة مجانية وعرض سعر. الهملة، الرياض — +973 17580191"
+      content="تواصل مع مصنع الثقة للحصول على استشارة مجانية وعرض سعر. الهملة، البحرين — +973 17580191"
     />
     <meta
       property="og:image"
-      content="https://zahraco.com/images/Curtains-1.webp"
+      content="https://trust-co.net/images/og-image.webp"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="ar_BH" />
 
+    <link rel="canonical" href="https://trust-co.net/contact.html" />
+
     <link rel="icon" href="./images/logo.png" type="image/png" />
-    <link rel="canonical" href="https://zahraco.com/contact.html" />
 
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/all.min.css" />
@@ -32,9 +44,65 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ContactPage",
+            "@id": "https://zahra-co.com/contact.html#webpage",
+            "url": "https://zahra-co.com/contact.html",
+            "name": "تواصل معنا - مصنع الزهراء",
+            "description": "تواصل مع مصنع الزهراء للحصول على استشارة مجانية وعرض سعر. الرياض، السلي - المشاعل +966 056 163 7207",
+            "inLanguage": "ar",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://zahra-co.com/#website",
+              "url": "https://zahra-co.com/",
+              "name": "مصنع الزهراء للستائر والأبواب"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "@id": "https://zahra-co.com/contact.html#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "الرئيسية",
+                  "item": "https://zahra-co.com/index.html"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "تواصل معنا",
+                  "item": "https://zahra-co.com/contact.html"
+                }
+              ]
+            },
+            "mainEntity": {
+              "@type": ["LocalBusiness", "ManufacturingBusiness"],
+              "@id": "https://zahra-co.com/#organization",
+              "name": "مصنع الزهراء للستائر والأبواب",
+              "url": "https://zahra-co.com/",
+              "telephone": "+966 056 163 7207",
+              "email": "info@zahra-co.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "الرياض - السلي - المشاعل",
+                "addressLocality": "Ryadh",
+                "addressRegion": "Riyadh",
+                "addressCountry": "SA"
+              }
+            }
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg py-5" id="mainNavbar">
       <div class="container">
         <div class="logo-box">
           <a class="navbar-brand" href="index.html">
@@ -64,11 +132,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="services.html"> خدماتنا </a>
+              <a class="nav-link" href="about.html"> من نحن </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> من نحن </a>
+              <a class="nav-link" href="services.html"> خدماتنا </a>
             </li>
 
             <li class="nav-item has-mega-menu">
@@ -236,9 +304,19 @@
     </nav>
 
     <main>
-      <section
-        class="container py-5 d-flex justify-content-around align-items-center"
-      >
+      <section class="contact-section">
+        <div class="container py-5">
+          <div class="section-content text-center mx-auto">
+            <h2>نسعد دائماً <span>بخدمتكم</span></h2>
+            <p>
+              سواء كنت ترغب في استشارة فنية أو طلب عرض سعر، فريق خبراء مصنع
+              الثقة مستعد لمساعدتك في تحويل رؤيتك إلى واقع ملموس.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5 d-flex align-items-center">
         <div class="contact-wrapper">
           <div class="info-side">
             <p class="info-eyebrow">ابقَ على تواصل</p>
@@ -293,30 +371,26 @@
           </div>
 
           <div class="form-side">
-            <p class="form-eyebrow">نموذج التواصل</p>
             <h3 class="form-heading">اترك استفسارك</h3>
-            <p class="form-sub">سنرد عليك خلال 24 ساعة</p>
-
-            <div id="form-alert" style="display: none"></div>
+            <p class="form-sub">سنرد عليك خلال 24 ساعة عمل</p>
 
             <form id="contact-form" novalidate autocomplete="on">
-              <!-- Honeypot field — hidden from real users, catches bots -->
-              <div class="hp-field" aria-hidden="true" tabindex="-1">
-                <label for="website-url">Website</label>
+              <div id="form-alert"></div>
+
+              <div aria-hidden="true" class="honeypot">
+                <label for="website-url">اتركه فارغًا</label>
                 <input
                   type="text"
                   id="website-url"
-                  name="website"
-                  autocomplete="off"
+                  name="website_url"
                   tabindex="-1"
+                  autocomplete="off"
                 />
               </div>
 
               <div class="field-row">
                 <div class="field-group">
-                  <label for="sender-name"
-                    >الاسم <span class="required-mark">*</span></label
-                  >
+                  <label for="sender-name">الاسم</label>
                   <input
                     id="sender-name"
                     name="from_name"
@@ -325,40 +399,54 @@
                     required
                     minlength="2"
                     maxlength="100"
-                    pattern="^[\u0600-\u06FFa-zA-Z\s.'-]+$"
                     autocomplete="name"
-                    aria-describedby="name-error"
                   />
-                  <span id="name-error" class="field-error" role="alert"></span>
+                  <span class="field-error" id="error-name"></span>
                 </div>
                 <div class="field-group">
-                  <label for="sender-email"
-                    >البريد الالكتروني
-                    <span class="required-mark">*</span></label
-                  >
+                  <label for="sender-phone">رقم الهاتف</label>
                   <input
-                    id="sender-email"
-                    name="from_email"
-                    type="email"
-                    placeholder="example@email.com"
-                    required
-                    maxlength="254"
-                    autocomplete="email"
+                    id="sender-phone"
+                    name="from_phone"
+                    type="tel"
+                    placeholder="+973 XXXX XXXX"
+                    maxlength="20"
+                    autocomplete="tel"
                     dir="ltr"
-                    aria-describedby="email-error"
                   />
-                  <span
-                    id="email-error"
-                    class="field-error"
-                    role="alert"
-                  ></span>
+                  <span class="field-error" id="error-phone"></span>
                 </div>
               </div>
 
               <div class="field-group">
-                <label for="sender-message"
-                  >الرسالة <span class="required-mark">*</span></label
-                >
+                <label for="sender-email">البريد الإلكتروني</label>
+                <input
+                  id="sender-email"
+                  name="from_email"
+                  type="email"
+                  placeholder="example@email.com"
+                  required
+                  maxlength="254"
+                  autocomplete="email"
+                  dir="ltr"
+                />
+                <span class="field-error" id="error-email"></span>
+              </div>
+
+              <div class="field-group">
+                <label for="sender-service">نوع الخدمة</label>
+                <select id="sender-service" name="service">
+                  <option value="" disabled selected>اختر نوع الخدمة</option>
+                  <option>تركيب ستائر جديدة</option>
+                  <option>تصميم أبواب أكورديون</option>
+                  <option>استشارة فنية / زيارة موقع</option>
+                  <option>صيانة</option>
+                  <option>أخرى</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="sender-message">الرسالة</label>
                 <textarea
                   id="sender-message"
                   name="message"
@@ -366,16 +454,8 @@
                   required
                   minlength="10"
                   maxlength="2000"
-                  aria-describedby="message-error"
                 ></textarea>
-                <div class="field-meta">
-                  <span
-                    id="message-error"
-                    class="field-error"
-                    role="alert"
-                  ></span>
-                  <span id="char-counter" class="char-counter">0 / 2000</span>
-                </div>
+                <span class="field-error" id="error-message"></span>
               </div>
 
               <button id="btn-send" class="btn-send" type="submit">
@@ -388,6 +468,48 @@
         </div>
       </section>
     </main>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <h2>الأسئلة <span>الشائعة</span></h2>
+          <p>
+            إليك بعض الإجابات السريعة على الاستفسارات الأكثر تكراراً من قبل
+            عملائنا.
+          </p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h4>هل تقدمون استشارات مجانية؟</h4>
+            <p>
+              نعم، نوفر خدمة المعاينة والقياس المجانية داخل المملكة العربية
+              السعودية لجميع عملائنا.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h4>كم يستغرق وقت التنفيذ؟</h4>
+            <p>
+              تتراوح فترة التنفيذ عادة بين 5 إلى 10 أيام عمل حسب حجم المشروع
+              والطلبات الخاصة.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h4>هل تعملون خارج المملكة العربية السعودية؟</h4>
+            <p>
+              نركز حالياً على خدمة عملاء المملكة العربية السعودية، لكن يمكن
+              التواصل معنا لمناقشة مشاريع خاصة خارج المملكة.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h4>هل تقدمون ضمانًا على المنتجات؟</h4>
+            <p>
+              نعم، تأتي جميع منتجاتنا مع ضمان على جودة الصنع والتركيب، تفاصيله
+              تُحدد عند توقيع العقد.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer">
       <div class="container">
