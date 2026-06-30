@@ -1803,10 +1803,18 @@ footer .social {
 footer .social li {
   padding: 10px;
   background-color: #2e2e2e;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .social a {
   color: white;
   transition: var(--main-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .social a .svg-inline--fa {
   font-size: 20px;
